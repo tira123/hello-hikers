@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mountain Club</title>
+  <meta name="author" content="Tira Colakovic">
+  <meta name="description" content="Join the mountaineering club">
+  <meta name="keywords" content="mountain climbing, wilderness, forests, accomodation, 48 4000 footers, AMC certificate">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 34%;
+      margin: auto;
+}
+.carousel-inner {
+    background-image: url("blue.jpg");
+    color:white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: lightblue;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+.nav-tabs li a {
+    background-color:lightblue;
+    color: purple;
+}
+  footer {
+      background-color: lightblue;
+      color: purple;
+      padding: 10px;
+  }
+  </style>
+  </head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<div class="container">
+  <br>
+<h3> Mountain Club </h3>
+        <ul class="nav nav-tabs nav-justified">
+        <li>
+        <a href="#myPage">
+             <span class="glyphicon glyphicon-home"></span> Home
+        </a>
+        </li>
+         
+        <li>
+        <a href="#hiking">
+          <span class="glyphicon glyphicon-tree-conifer"></span> Hiking
+        </a>
+        </li>
+        
+        <li>
+        <a href="#weather">
+           <span class="glyphicon glyphicon-cloud"></span> Weather
+        </a>
+        </li>
+         
+        <li>
+        <a href="#weather">
+           <span class="glyphicon glyphicon-time"></span> Time
+        </a>
+        </li>
+       
+        <li>
+        <a href="#weather">
+           <span class="glyphicon glyphicon-tent"></span> Tent 
+        </a>
+        </li>
+
+        <li>
+        <a href="#weather">
+            <span class="glyphicon glyphicon-calendar"></span> Calendar
+        </a>
+        </li>
+         
+        <li>
+        <a href="#photos">
+           <span class="glyphicon glyphicon-picture"></span> Pictures
+        </a>
+        </li>
+        
+        <li>
+        <a href="#contact">
+           <span class="glyphicon glyphicon-envelope"></span> Contact
+        </a>
+        </li>
+
+        <li>
+        <a href="#contact">
+           <span class="glyphicon glyphicon-question-sign"></span> Questions
+        </a>
+        </li>
+        </ul>
+     
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+    
+    <!-- Wrapper for slides -->
+    <div id="myPage" class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="wow.jpg" alt="mountain" width="150" height="150">
+        <div class="carousel-caption">
+          <h3>Mt. Katahdin, ME</h3>
+          <p>Amazing view of Mt. Katahdin, ME.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="wow2.jpg" alt="mountain" width="150" height="150">
+        <div class="carousel-caption">
+          <h3>Mt. Katahdin, ME</h3>
+          <p>Beautful vast view of the rocky mountains in Maine.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="wow3.jpg" alt="mountain" width="150" height="150">
+        <div class="carousel-caption">
+          <h3>Mt.Katahdin, ME</h3>
+          <p>Sharp penetration of a rock coming from the mountain.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="wow_4.jpg" alt="mountain" width="150" height="150">
+        <div class="carousel-caption">
+          <h3>Mt. Katahdin, ME</h3>
+          <p>Pamola: Knife Edge, Mt. Katahdin, ME.</p>
+        </div>
+      </div>
+     
+     <div class="item">
+        <img src="wow_5.jpg" alt="mountain" width="150" height="150">
+        <div class="carousel-caption">
+          <h3>Mt. Katahdin, ME</h3>
+          <p>Hiking group on Mt. Katahdin, ME.</p>
+       </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+
+      <a class="btn btn-info btn-sm" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous  
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="btn btn-info btn-sm" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Next
+    <span class="sr-only">Next</span>
+    </a> 
+  </div>
+  </div>
+ <div id="hiking" class="container text-center">
+  <h3>Leader Information</h3>
+  <p><em>Into the wilderness and slide through the mountains!</em></p>
+  <div class="row">
+    <div class="col-sm-1">
+       <ul>
+	<li><a href="#weather"><b>Food & Gear</a></li>
+	<li><a href="#googlemap"><b>Map</a></li>
+	<li><a href="#contact"><b>Signup Form</a></li>
+	</ul> 
+      </div>
+     
+    <div class="col-sm-4">
+      <p><strong> Alberta</strong></p><br>
+      <img src="abi.jpg" class="img-circle" alt="Abi" height="150">
+      <p><small>Hiking leader and organizer.</small></p>
+    </div>
+    <div class="col-sm-2">
+      <p><strong>The Team</strong></p><br>
+      <img src="team.jpg" class="img-rounded" alt="team" height="150">
+      <p><small>Group of hiking enthusiasts.</small></p>
+    </div>
+    <div class="col-sm-3">
+      <p><strong>The Wilderness</strong></p><br>
+      <img src="wild.jpg" class="img-rounded" alt="wilderness" height="150">
+      <p><small> The vast rich wilderness.</small></p>
+    </div>
+    <div class="col-sm-2">
+      <p><strong>Accommodation</strong></p><br>
+      <p><small>Shelters are easy to locate and most of the time for free for those who are staying overnight. Shelters can be lean-tos or cabins. Remember to bring a sleeping bag with you before you decide to sleep overnight in the forest. </small></p>
+    </div>
+    <div class="container">
+    <div class="well well-lg"> </div>
+    </div>
+
+    <div class="container text-left">
+    <div class="well well-lg">
+  <div class="row">
+    <div class="col-sm-4">
+  <p><small><strong>About:</strong><br>The Appalacian Mountain Club leaders are all volunteering nature enthusiasts who organize great events during all seasons of the year-winter, spring, summer and fall.The actities range from short relaxing day hikes to strenous 3-4 day hikes. Make sure to know your level of hiking before you enroll into any of the hiking events as some of the hikes may be overwhelming for beginners.</small></p>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+  <p><small><strong> AMC achievement:</strong><br>Besides being wilderness certified, many of the leaders, such as Alberta, have accomplished the<mark> 48 4000 footer AMC certification of achievement</mark>, covering all 48 4000 footer mountains. <br>For more information about this certification, click on the image to the right or on the link to the <a href="http://www.amc4000footer.org">AMC website</a> </small></p>
+   </div>
+<div class="row">
+  <div class="col-sm-2">
+   <a href="http://www.amc4000footer.org"><img src="award.gif" alt="award" height="100" title="Click Image for more information"></a>
+   <p><small><br>48 4000 Footer AMC Certification of Achievement</small></p>
+   </div>
+ <div class="row">
+ <div class="col-sm-2">
+ <p><small><strong> Why join the Club?</strong><br>The answer to this question is: Why not? The AMC is a great club to meet hikers of all levels, from beginners to those with plenty of mountaineering experience, and meet new friends and hiking buddies. </small></p>
+   </div>
+  </div>
+ </div>
+  </div>
+    </div>
+  </div>
+<div id="weather" class="container text-left">
+    <div class="row">
+    <div class="col-sm-2">
+     <p>Weather<p>
+      <img src="weather2.gif" alt="weather" width="100" height="100" title="This is not a link">
+      <p><small>For more information on the weather, please click on this link:<br><a href="http://www.weather.gov/">weather.gov</a></small></p>
+    </div> 
+    <div class="col-sm-2">
+      <p>Events</p>
+      <p><small>Monroe & Washington Foliage Hike<br>When: <mark> Saturday, October 7, 2016</mark><br> Hike Rating: A3A.<br>Cost:<mark> $0</mark><br>Leaders:<br>Bill Donovan<br>Alberta Colakovic </small></p>
+      </div>
+      <div class="col-sm-2">
+      <p>Time & Accommodation</p>
+      <p><small>Event meeting:<mark>6:00 AM</mark><br>Where:<mark> Starbucks</mark><br>What to bring along:<br><mark>A water bottle, food, and hiking gear</mark> <br> Accomodation: <mark> none </mark> </small></p>
+      </div>
+      <div class="col-sm-4">
+      <p>Description</p>
+      <p><small>Join us for a one-day hike of Mts. Monroe and Washington – two of the highest and spectacular peaks in the White Mountains with amazing 360 views - during typically peak foliage season. We will hikethe Ammonoosuc Ravine and Crawford Trails to Mt. Monroe, take Davis Path to Mt. Washington, and descend via Crawford Path and the Ammonoosuc. Total distance is 9.8 miles with 4150’ elevation gain(and ~8 hours). Participants must be prepared for the distance, elevation gain, and above-treeline hiking.</small></p>
+  </div>
+    <div class="col-sm-2">
+      <p>Basic Information:</p>
+      <p><small>What to wear for a hike? <br>Wear clothes made from synthetic material, such as nylon and polyester. The reason being for this is that cotton wet from sweat can cause hyperpermia in colder temperatures, whereas synthetic clothes will keep hikers warm, despite the sweat, and
+    regardless of temperature changes.</small></p>
+      </div>
+     </div>
+
+<p>Photos</p> 
+<div id="photos">
+ <div class="well well-lg">
+ <div class="row text-center">
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="photo1.jpg" alt="photo">
+      <p><strong>New Hampshire</strong></p>
+      <p><small>Group hike on Franconia during the winter season.</small></p>
+    </div>
+   </div>
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="photo2.jpg" alt="photo">
+      <p><strong>New Hampshire</strong></p>
+      <p><small>Alberta on Franconia during the winter season.</small></p>
+    </div>
+    </div>
+    <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="photoamazing.jpg" alt="photo">
+      <p><strong>New Hampshire</strong></p>
+      <p><small>The view of Franconia during the winter season.</small></p>
+    </div>
+    </div>
+
+ <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="photo4.jpg" alt="photo">
+      <p><strong>New Hampshire</strong></p>
+      <p><small>Alberta with an ice axe, Franconia, NH.</small></p>
+    </div>
+   </div>
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="photo5.jpg" alt="photo">
+      <p><strong>New Hampshire</strong></p>
+      <p><small>Group on Franconia during the winter season.</small></p>
+    </div>
+    </div>
+    <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="photo6.jpg" alt="photo">
+      <p><strong>New Hampshire</strong></p>
+      <p><small>The view of the stunning nature, Franconia, NH.</small></p>
+    </div>
+    </div>
+    </div>
+    </div>
+<div class="row text-center">
+<div class="col-sm-6">
+<div id="googlemap" class= "container">
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<div style="overflow:hidden;height:400px;width:500px;">
+<div id="gmap_canvas" style="height:400px;width:500px;"></div>
+<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+<a class="google-map-code" href="http://www.pureblack.de/google-maps/" id="get-map-data">pureblack.de</a></div>
+<script type="text/javascript">
+ function init_map(){var myOptions = {zoom:9,center:new google.maps.LatLng(44.3876119,-68.20391230000001),mapTypeId: google.maps.MapTypeId.ROADMAP};
+map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(44.199691,-71.474968)});
+infowindow = new google.maps.InfoWindow({content:"<b></b><br/><br/> White Mountains, NH" });
+google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);
+});
+infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+   </div>
+   </div>
+ <div class="row">
+ <div class="col-sm-6">
+      <img src="mountainmap.gif" alt="photo" class="img-circle" height="400" width="500" title="This is not a link">
+      <p> <em>Satelite view of the Presidential Trail, NH.</em></p>
+    </div>
+    </div>
+ </div>
+</div>
+
+<div id="contact" class="container">
+  <h3 class="text-center">Contact Information</h3>
+  <div class="row">
+    <div class="col-md-3">
+      <p>Interested? Drop a note!</p><br>
+      <p><small><span class="glyphicon glyphicon-map-marker"></span>Massachusetts, US</small></p>
+      <p><small><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</small></p>
+      <p><small><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</small></p>	   
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>	
+    </div>
+  </div>
+</div>
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br>
+  <p>Copyright: Tira Colakovic</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+</script>
+</body>
+</html>
